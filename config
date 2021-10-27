@@ -1,0 +1,13 @@
+[default]
+region = ap-south-1
+output = json
+[profile eb]
+region = us-east-1
+output = json
+[profile PROD]
+role_arn = arn:aws:iam::118654301802:role/OrganizationAccountAccessRole
+source_profile = default
+
+[profile DEV]
+role_arn = arn:aws:iam::069355156686:role/OrganizationAccountAccessRole
+source_profile = default
