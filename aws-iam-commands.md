@@ -13,7 +13,11 @@ aws iam create-role --role-name santapan-s3-custom-role --assume-role-policy-doc
 ```
 aws iam attach-role-policy --policy-arn arn:aws:iam::350102312519:policy/santapan-s3-custom-policy --role-name santapan-s3-custom-role
 ```
+# Get role details
 
+```
+aws iam get-role --role-name ec2-eks
+```
 
 
 
